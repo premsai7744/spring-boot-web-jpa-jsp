@@ -54,5 +54,44 @@ public class WelcomeController {
 	
 		return modelAndView;
 	}
+	
+	@RequestMapping(path="/login",method=RequestMethod.POST)
+	public ModelAndView userLogin(HttpServletRequest request) {
+		
+		String result = usersService.userLogin(request.getParameter("uname"), request.getParameter("pword"));
+		
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.addObject("result",result);
+		modelAndView.setViewName("Result");
+	
+		return modelAndView;
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

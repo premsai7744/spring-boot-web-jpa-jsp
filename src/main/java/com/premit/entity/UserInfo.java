@@ -24,7 +24,7 @@ public class UserInfo {
 	private String userName;
 	
 	@Column(name="password")
-	private String Password;
+	private String password;
 	
 	@Column(name="f_name")
 	private String firstName;

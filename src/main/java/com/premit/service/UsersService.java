@@ -38,4 +38,35 @@ public class UsersService {
 			}
 		}
 	}
+	
+	
+	public String userLogin(String userName,String password) {
+		if(userInfoRepository.findByUserNameAndPassword(userName, password).isPresent()) {
+			return "Login successfully done.";
+		} else {
+		   return  "Invalid Credentials!, Please try again.";
+		}
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
