@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 <p style="color:blue">${message}<p>
 <jsp:include page="Welcome.jsp"></jsp:include>
 </body>

@@ -10,7 +10,7 @@
 <h2 style="color:blue;font-style: italic;">Welcome to EasyShopping.</h2>
 <form action="login" method="post">
 Username:<input type="text" name="uname"><br>
-Password:<input type="text" name="pword"><br>
+Password:<input type="password" name="pword"><br>
 <input type="submit" value="Login"><br>
 <p>Don't have account?<a href="register">create account</a> </p>
 </form> 
